@@ -19,7 +19,7 @@ N = 100
 
 # ######################################################################################
 # experiments parameters
-project_label = 'rescience_cone_2021'
+project_label = 'cone_shouval_2021'
 
 experiment_label = 'seq_replay_ff_all_4x700_highTh'
 
@@ -30,7 +30,7 @@ paths = set_project_paths(system=system_label, project_label=project_label)
 
 # ################################
 ParameterRange = {
-    'n_col': [1],
+    'n_col': [4],
     # 'th': np.arange(0.03, 0.11, 0.02),
     'th': [0.03, 0.035],
     'T': np.arange(1, 4, 1)

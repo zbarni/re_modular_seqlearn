@@ -17,7 +17,7 @@ N = 100
 
 # ######################################################################################
 # experiments parameters
-project_label = 'rescience_cone_2021'
+project_label = 'cone_shouval_2021'
 
 experiment_label = 'seq_replay_4x700_HebbTh'
 # experiment_label = 'seq_replay_set=org_HebbTh'

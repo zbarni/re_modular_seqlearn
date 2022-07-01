@@ -19,11 +19,9 @@ N = 100
 
 # ######################################################################################
 # experiments parameters
-project_label = 'rescience_cone_2021'
+project_label = 'cone_shouval_2021'
 
-# experiment_label = 'seq_replay_ff_all_4x700_noNoise'
-experiment_label = 'seq_replay_ff_all_4x700_noNoise_w'
-# experiment_label = 'seq_replay_ff_all_4xSet4_noNoise_w'
+experiment_label = 'seq_replay_ff_all_4x700_lowBgNoise_w'
 
 # ######################################################################################
 # system parameters

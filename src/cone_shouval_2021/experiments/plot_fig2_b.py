@@ -13,6 +13,7 @@ from utils.parameters import ParameterSet
 
 logprint = logger.get_logger(__name__)
 
+
 def plot_weights_sum(parameters, storage_paths):
     """
     Plot Fig. 3.S2.b) from eLife version.
@@ -52,7 +53,7 @@ def plot_weights_sum(parameters, storage_paths):
     axes[1].set_ylabel('nS')
 
     fig.tight_layout()
-    fig.savefig(os.path.join(storage_paths['figures'], 'Fig3S2_weights_sum_{}.pdf'.format(parameters.label)))
+    fig.savefig(os.path.join(storage_paths['figures'], 'Fig_2B_weights_sum_{}.pdf'.format(parameters.label)))
 
 
 def plot_weights_mean(parameters, storage_paths):
@@ -96,7 +97,7 @@ def plot_weights_mean(parameters, storage_paths):
     axes[1].set_ylabel('nS')
 
     fig.tight_layout()
-    fig.savefig(os.path.join(storage_paths['figures'], 'Fig3S2_weights_mean_{}.pdf'.format(parameters.label)))
+    fig.savefig(os.path.join(storage_paths['figures'], 'Fig_2B_weights_mean_{}.pdf'.format(parameters.label)))
 
 
 def run(parameters, display=False, plot=True, save=True, load_inputs=False):
@@ -113,7 +114,6 @@ def run(parameters, display=False, plot=True, save=True, load_inputs=False):
                                           parameters.label, save=save)
 
     logger.update_log_handles(job_name=parameters.label, path=storage_paths['logs'])
-
 
     plot_weights_sum(parameters, storage_paths)
     plot_weights_mean(parameters, storage_paths)

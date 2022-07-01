@@ -67,9 +67,9 @@ def plot_weights_mean(parameters, storage_paths, src_col_ff):
     axes[1].set_xlabel('Trial')
 
     fig.tight_layout()
-    fig.savefig(os.path.join(storage_paths['figures'], 'Fig_FF_weights_mean_{}_srcCol={}.pdf'.format(parameters.label, src_col_ff)))
-    fig.savefig(os.path.join(storage_paths['figures'], 'Fig_FF_weights_mean_{}_srcCol={}.svg'.format(parameters.label, src_col_ff)), format='svg')
-    logprint.info('Saved figure: Fig_FF_weights_mean_{}_srcCol={}.pdf'.format(parameters.label, src_col_ff))
+    fig.savefig(os.path.join(storage_paths['figures'], 'Fig_6C_FF_weights_mean_{}_srcCol={}.pdf'.format(parameters.label, src_col_ff)))
+    fig.savefig(os.path.join(storage_paths['figures'], 'Fig_6C_FF_weights_mean_{}_srcCol={}.svg'.format(parameters.label, src_col_ff)), format='svg')
+    logprint.info('Saved figure: Fig_6C_FF_weights_mean_{}_srcCol={}.pdf'.format(parameters.label, src_col_ff))
 
 
 def run(parameters, display=False, plot=True, save=True, load_inputs=False, src_col_ff=1):

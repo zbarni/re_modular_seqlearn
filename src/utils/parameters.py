@@ -21,11 +21,10 @@ from fna.tools.utils.data_handling import isiterable, import_mod_file
 from fna.tools.utils import operations, logger
 
 # add model source path
-sys.path.append('/home/zbarni/code/projects/modseq/dev/')
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../../')
 
-from cone_shouval_src.defaults.paths import set_project_paths
-from cone_shouval_src.utils.system import set_system_parameters
+from src.defaults.paths import set_project_paths
+from src.utils.system import set_system_parameters
 
 logs = logger.get_logger(__name__)
 np.set_printoptions(threshold=sys.maxsize, suppress=True)

@@ -1,15 +1,11 @@
 """
 Plots figure 2C, traces.
 """
-import itertools
-import pickle
 import os
 import numpy as np
 from matplotlib import pyplot as plt
 import matplotlib.ticker as ticker
-import importlib.util
 
-from fna.tools.visualization.helper import set_global_rcParams
 from fna.tools.utils import logger
 from fna.tools.utils.data_handling import set_storage_locations
 
@@ -24,15 +20,14 @@ def plot_traces(parameters, storage_paths):
     """
     Plot Fig. 3.S2.b) from eLife version.
     """
-    plot_cols = [0]
-    colors = plotting.sns.color_palette('tab10')[:4]
+    plot_cols = [0]  # plot FF connections from column C_0
 
     filename = 'Recordings_{}.data'.format(parameters.label)
     reward_times, recorded_data = plotting.load_recording_data(filename, storage_paths)
     data = plotting.get_traces(parameters, recorded_data, mean=True)
 
-    # plot_trials = [3, 15, 35]
-    plot_trials = [3, 25, 35]
+    # plot_trials = [3, 25, 35]  # which training trials to plot
+    plot_trials = [1, 2, 3]  # which training trials to plot
 
     for col_id in plot_cols:
         fig, axes = plt.subplots(2, 3, figsize=fig_def.figsize['re_fig4s_traces'])

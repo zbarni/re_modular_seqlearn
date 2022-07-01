@@ -278,7 +278,7 @@ def build_parameters(n_col, n_batches, T):
 
     n_samples_to_record = min(50, task_params['n_batches'])
     recording_params = {
-        'sampling_interval': 100.,
+        'sampling_interval': 10.,
         # 'n_syn_rec_mean': 1,
         'n_syn_rec_mean': 5000,
         'n_samples_to_record': n_samples_to_record,

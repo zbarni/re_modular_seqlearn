@@ -15,7 +15,7 @@ from helper import naming
 
 # ######################################################################################
 # experiments parameters
-project_label = 'rescience_cone_2021'
+project_label = 'cone_shouval_2021'
 # experiment_label = 'test_rescale_set700_scale=EI_L5_L5_cross,IE_L5_rec,EE_L23_L5_short'
 experiment_label = 'scale_manual'
 

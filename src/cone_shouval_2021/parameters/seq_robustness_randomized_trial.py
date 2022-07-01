@@ -17,7 +17,7 @@ N = 100
 
 # ######################################################################################
 # experiments parameters
-project_label = 'rescience_cone_2021'
+project_label = 'cone_shouval_2021'
 experiment_label = 'robustness_learn_rand_4x700_trial'
 # experiment_label = 'robustness_learn_rand_original'
 

@@ -11,13 +11,18 @@ The repository contains the code and data necessary to run the simulations, gene
 
 ### Dependencies
 
-* **Python** 3.8 or higher
+* **Python** 3.8
 * [**NEST 2.20.0**](http://www.nest-simulator.org/) - modified version is attached under `nest-simulator-2.20.0-eligibility.zip`. 
-You can follow the standard NEST  instructions to install NEST into a directory of your choice. Make sure the environement
+You can follow the standard NEST  instructions to install NEST into a directory of your choice. Make sure the environment
 variables are loaded properly.
 * **FNA (Functional Neural Architectures)** - the library is provided as a compressed file 
-under `/libs/fna_v0.2.1_modified.zip`. To install, unpack the archive and run `pip install .`
-(or follow instructions).
+under `/libs/fna_v0.2.1_modified.zip`. To install, unpack the archive and follow instructions:
+
+```commandline
+$ `pip install -r requirements.txt`
+$ `pip install .`
+```
+* **setuptools** version 52.0.0 or lower
 * **numpy** version 1.7.0 or higher 
 * **scipy** version 0.12.0 or higher
 * **scikit-learn** version 0.18.0 or higher
