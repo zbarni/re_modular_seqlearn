@@ -156,7 +156,7 @@ cd src/
       python execute.py --project=cone_shouval_2021 -p=./cone_shouval_2021/data/scale_manual/parameters/scale_manual_p1=0.2_p2=0.2_T=1 -c=plot_figs_4bcd_5ab_6de --extra plot_epoch=test_epoch plot_batch=test_batch_1 train_set=False   
       ```
 
-  - ### Projections between all columns
+- ### Projections between all columns
 
     #### 1. No parameter changes
 
@@ -209,7 +209,7 @@ cd src/
     python execute.py --project=cone_shouval_2021 -p=./cone_shouval_2021/data/seq_replay_ff_all_high_th/parameters/seq_replay_ff_all_high_th_n_col=4_th=0.03_T=1 -c=plot_figs_4bcd_5ab_6de --extra plot_epoch=test_epoch plot_batch=test_batch_1 train_set=False
     ```
 
-  - ### Alternative wiring with local inhibition 
+- ### Alternative wiring with local inhibition 
   
     Running the simulations:
       ```commandline
